@@ -92,6 +92,49 @@ Configuration backup files may contain sensitive information, including:
 
 Only use sanitized or synthetic samples in public repositories.
 
+## Binary format notes
+
+The GS108E / GS108Ev3 backup file appears to be organized in labeled sections.
+
+Known sections include:
+
+- name
+- ethconfig
+- pvid
+- vlan
+- qos
+- mirror
+- storm
+- igmpsnoop
+
+The parser currently supports:
+
+- device name
+- management IPv4 settings
+- PVID table
+- VLAN membership table
+
+### VLAN table format
+
+The VLAN table appears to use the following structure:
+
+vlan
+[00 04]  VLAN count
+[00 04]  entry count
+
+Repeated entries:
+
+[VID:2 bytes]
+[MEMBER:2 bytes bitmap]
+[TAG:1 byte bitmap]
+
+Bit position corresponds to port number:
+
+bit0 → port1
+bit1 → port2
+...
+bit7 → port8
+
 ## Legal notice
 
 This project is **unofficial** and is **not affiliated with, endorsed by, or supported by NETGEAR**.
