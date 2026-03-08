@@ -40,9 +40,9 @@ The parser should be considered **best-effort** and may break on:
 # sw1
 
 ## Basic
-- Management IP: 172.16.0.14
-- Netmask: 255.255.254.0
-- Gateway: 172.16.0.1
+- Management IP: 192.168.10.5
+- Netmask: 255.255.255.0
+- Gateway: 192.168.10.1
 
 ## PVID
 
