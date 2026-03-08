@@ -32,7 +32,7 @@ The parser should be considered **best-effort** and may break on:
   - `pvid`
   - `vlan`
 - Render human-readable Markdown output
-- Help compare real switch state with inventory systems such as NetBox
+- Help compare real switch state with inventory systems such as [NetBox](https://github.com/netbox-community/netbox)
 
 ## Example output
 
