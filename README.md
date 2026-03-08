@@ -64,7 +64,7 @@ Python 3.10+ is recommended.
 ```bash
 git clone https://github.com/<your-user>/gs108e-cfg-parser.git
 cd gs108e-cfg-parser
-python3 parser.py examples/sample.cfg.bin
+python3 parser.py examples/sample.cfg
 ```
 
 ## Scope
