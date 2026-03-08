@@ -62,7 +62,7 @@ The parser should be considered **best-effort** and may break on:
 Python 3.10+ is recommended.
 
 ```bash
-git clone https://github.com/<your-user>/gs108e-cfg-parser.git
+git clone https://github.com/dolphag/gs108e-cfg-parser.git
 cd gs108e-cfg-parser
 python3 parser.py examples/sample.cfg
 ```
