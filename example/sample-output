@@ -2,9 +2,9 @@
 
 ## Basic
 
-- Management IP: 172.16.0.2
+- Management IP: 192.168.10.5
 - Netmask: 255.255.255.0
-- Gateway: 172.16.0.1
+- Gateway: 192.168.10.1
 
 ## PVID
 
